@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    text-align: center;
+    align-items: center;
+   
+}
+.clock{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+   
+   
+}
+.clock > div{
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: tomato;
+    color: #ffffff;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+   ;
+
+   
+}
+.clock > div >h2{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1.7px;
+}
+.clock > div > p{
+    font-size: 20px;
+    font-weight: 9600;
+    letter-spacing: 1.7px;
+    color: rgb(255, 255, 255);
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #ff0000;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+   
+    
+  }
+  .waviy{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .clock{
+       display: block;
+       align-items: center;
+       text-align: center;
+       width: 100%;
+       margin-left: 100px;
+       
+    }
+}
